@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product.ProductDescriptionFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_product_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textColor="#000000"
+        android:text="A mobile phone is a wireless handheld device that allows users to make and receive calls and to send text messages, among other features.The earliest generation of mobile phones could only make and receive calls. ... A mobile phone may also be known as a cellular phone or simply a cell phone.
+         '\n\n'Feature phone is a term typically used as a retronym to describe mobile phones which are limited in capabilities in contrast to a modern smartphone.Feature phones typically provide voice calling and text messaging functionality, in addition to basic multimedia and Internet capabilities, and other services offered by the user's wireless service provider. A feature phone has additional functions over and above a basic mobile phone which is only capable of voice calling and text messaging.[20][21] Feature phones and basic mobile phones tend to use a proprietary, custom-designed software and user interface. By contrast, smartphones generally use a mobile operating system that often shares common traits across devices." />
+
+</FrameLayout>

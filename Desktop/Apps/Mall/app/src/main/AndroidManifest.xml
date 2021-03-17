@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="learncodeonline.in.mymall">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mall_icon"
+        android:label="MY COLLEGE MALL"
+        android:roundIcon="@mipmap/mall_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OTPverificationActivity"></activity>
+        <activity android:name=".home.ViewAllActivity" />
+        <activity android:name=".address.MyAddressActivity" />
+        <activity
+            android:name=".address.AddAddressActivity"
+            android:theme="@style/RedProgressbar" />
+        <activity android:name=".address.DeliveryActivity" />
+        <activity android:name=".order.OrderDetailActivity" />
+        <activity android:name=".product.ProductDetailActivity" />
+        <activity android:name=".home.CategoryActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authentication.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/paytmTheme"
+            tools:replace="android:theme" />
+    </application>
+
+</manifest>
